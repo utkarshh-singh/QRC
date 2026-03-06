@@ -335,10 +335,10 @@ def run_qrc_experiment(
     # ------------------------------------------------------------------
     # states_train = esn.get_saved_states()                     # (N_train-washout, state_dim)
     # Re-run predict with save flag to get test states
-    esn.saved_quantum_states = None
-    esn.save_states = True
-    esn.prev_output = np.zeros(window_size)
-    esn.predict(X_te_sc)
+    # esn.saved_quantum_states = None
+    # esn.save_states = True
+    # esn.prev_output = np.zeros(window_size)
+    # esn.predict(X_te_sc)
     states_test = None #esn.get_saved_states()                      # (N_test, state_dim)
 
     sample_qc = cprc.CPMap()
