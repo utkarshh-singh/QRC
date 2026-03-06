@@ -1,0 +1,166 @@
+{
+    "best_params_per_tau": {
+        "5": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.2,
+            "spectral_radius": 0.2
+        },
+        "10": {
+            "noise": 1e-05,
+            "reservoir_size": 1000,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.3,
+            "spectral_radius": 0.2
+        },
+        "15": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.2,
+            "spectral_radius": 0.2
+        },
+        "20": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.3,
+            "spectral_radius": 0.2
+        },
+        "25": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.2,
+            "spectral_radius": 0.4
+        },
+        "30": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.1,
+            "spectral_radius": 0.2
+        },
+        "35": {
+            "noise": 1e-05,
+            "reservoir_size": 1000,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.1,
+            "spectral_radius": 0.2
+        },
+        "40": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.1,
+            "spectral_radius": 0.6
+        },
+        "45": {
+            "noise": 1e-05,
+            "reservoir_size": 1000,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.2,
+            "spectral_radius": 0.8
+        },
+        "50": {
+            "noise": 1e-05,
+            "reservoir_size": 1000,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.2,
+            "spectral_radius": 0.2
+        },
+        "55": {
+            "noise": 1e-05,
+            "reservoir_size": 500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.2,
+            "spectral_radius": 0.2
+        },
+        "60": {
+            "noise": 1e-05,
+            "reservoir_size": 500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.2,
+            "spectral_radius": 0.2
+        },
+        "65": {
+            "noise": 1e-05,
+            "reservoir_size": 500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.3,
+            "spectral_radius": 0.2
+        },
+        "70": {
+            "noise": 1e-05,
+            "reservoir_size": 500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.3,
+            "spectral_radius": 0.4
+        },
+        "75": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.3,
+            "spectral_radius": 0.2
+        },
+        "80": {
+            "noise": 1e-05,
+            "reservoir_size": 1000,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.1,
+            "spectral_radius": 0.4
+        },
+        "85": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.1,
+            "spectral_radius": 0.2
+        },
+        "90": {
+            "noise": 1e-05,
+            "reservoir_size": 1500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.1,
+            "spectral_radius": 0.2
+        },
+        "95": {
+            "noise": 1e-05,
+            "reservoir_size": 500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.1,
+            "spectral_radius": 0.2
+        },
+        "100": {
+            "noise": 1e-05,
+            "reservoir_size": 500,
+            "ridge_alpha": 0.01,
+            "sparsity": 0.2,
+            "spectral_radius": 0.2
+        }
+    },
+    "rmse_per_tau": {
+        "5": 7.597980502521753e-11,
+        "10": 1.6449970176503947e-08,
+        "15": 3.751982704583281e-08,
+        "20": 1.5641248643276753e-05,
+        "25": 0.0032764093865926235,
+        "30": 1.0128682872761348e-06,
+        "35": 2.215148114954072e-05,
+        "40": 0.00017214524817430612,
+        "45": 0.11447239482399105,
+        "50": 0.17619826524010346,
+        "55": 0.22728885251880057,
+        "60": 0.0020508594875239526,
+        "65": 0.0006822868223280175,
+        "70": 0.24992617559708585,
+        "75": 0.012102887840337544,
+        "80": 0.2146249242512096,
+        "85": 0.23790528372712422,
+        "90": 0.10806131287740371,
+        "95": 0.2605911475185394,
+        "100": 0.24225617495911933
+    }
+}

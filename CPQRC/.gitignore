@@ -1,0 +1,13 @@
+qstate_outputs/
+
+.ipynb_checkpoints/
+*.ipynb
+__pycache__/
+.idea/
+
+results_alpha_0_1.pkl
+results.pkl
+trained_torino_esn_model.pkl
+training_checkpoint_feedback.pkl
+training_checkpoint_feedback2.pkl
+training_job_ids.json

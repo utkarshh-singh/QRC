@@ -1,0 +1,38 @@
+{
+    "best_params_per_tau": {
+        "12": {
+            "noise": 0.0001,
+            "reservoir_size": 150,
+            "ridge_alpha": 0.001,
+            "sparsity": 0.3,
+            "spectral_radius": 0.2
+        },
+        "17": {
+            "noise": 0.0001,
+            "reservoir_size": 300,
+            "ridge_alpha": 0.001,
+            "sparsity": 0.3,
+            "spectral_radius": 0.4
+        },
+        "30": {
+            "noise": 0.0001,
+            "reservoir_size": 300,
+            "ridge_alpha": 0.001,
+            "sparsity": 0.3,
+            "spectral_radius": 0.4
+        },
+        "50": {
+            "noise": 0.0001,
+            "reservoir_size": 150,
+            "ridge_alpha": 0.001,
+            "sparsity": 0.3,
+            "spectral_radius": 0.2
+        }
+    },
+    "mse_per_tau": {
+        "12": 1.5623838295055916e-05,
+        "17": 0.001192561414512342,
+        "30": 0.030066299372731912,
+        "50": 0.08256527409673924
+    }
+}

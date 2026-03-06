@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Run artifacts (large; track only manifests and configs)
+runs/
+data/raw/
+data/processed/
+results/aggregated/
+results/figures/
+results/tables/
+logs/
+session_log.md
+# Keep manifests and configs tracked
+!manifests/planned_runs.csv
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
