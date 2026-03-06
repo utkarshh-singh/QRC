@@ -18,6 +18,12 @@ apikey.json
 apikey_personal.json
 forecast_horizon.pdf
 reliable_forecast_horizon.png
+Permanents.py
 
 models_old/
 cprc_recovery/
+
+.idea/
+.ipynb_checkpoints/
+*.ipynb
+__pycache__/
