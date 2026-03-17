@@ -40,6 +40,7 @@ from pathlib import Path
 from types import MethodType
 from typing import Optional
 from qiskit.compiler import transpile as _qk_transpile
+from qiskit.circuit import ParameterVector
 
 import numpy as np
 from sklearn.preprocessing import StandardScaler
@@ -259,34 +260,91 @@ def run_qrc_experiment(
     _shots       = bundle.shots
     _transpile   = bundle.transpile
 
+    # if bundle.noise_type == "ideal":
+    #     # Use Statevector — exact, no shots
+    #     def _patched_simulate(qc):
+    #         from qiskit.quantum_info import Statevector
+    #         qc_nm = qc.remove_final_measurements(inplace=False)
+    #         # Decompose custom gates (C-Map, P-Map) before Statevector
+    #         for _ in range(6):
+    #             qc_nm = qc_nm.decompose()
+    #         return Statevector(qc_nm).probabilities()
+
+    # else:
+    #     # Use AerSimulator with the appropriate noise model
+    #     def _patched_simulate(qc):
+    #         try:
+    #             qc_run = qk_transpile(qc, _simulator, optimization_level=0)
+    #         except Exception:
+    #             qc_run = qc
+    #             for _ in range(8):
+    #                 qc_run = qc_run.decompose()
+
+    #         job    = _simulator.run(qc_run, shots=_shots, noise_model=_noise_model)
+    #         result = job.result()
+    #         counts = result.get_counts()
+
+    #         n_q      = qc.num_qubits
+    #         all_bits = ["".join(p) for p in __import__("itertools").product("01", repeat=n_q)]
+    #         probs    = np.array([counts.get(b, 0) for b in all_bits], dtype=float) / _shots
+    #         return probs
+
+
     if bundle.noise_type == "ideal":
-        # Use Statevector — exact, no shots
         def _patched_simulate(qc):
             from qiskit.quantum_info import Statevector
             qc_nm = qc.remove_final_measurements(inplace=False)
-            # Decompose custom gates (C-Map, P-Map) before Statevector
             for _ in range(6):
                 qc_nm = qc_nm.decompose()
             return Statevector(qc_nm).probabilities()
 
     else:
-        # Use AerSimulator with the appropriate noise model
+        # ── Transpile a TEMPLATE circuit once, bind per sample ──────────
+        _template_qc = cprc.CPMap()          # unbound parametric circuit
+        _sorted_params = sorted(_template_qc.parameters, key=lambda p: p.name)
+
+        try:
+            _transpiled_template = qk_transpile(
+                _template_qc, _simulator, optimization_level=0
+            )
+            _transpiled_sorted_params = sorted(
+                _transpiled_template.parameters, key=lambda p: p.name
+            )
+            logger.info("Pre-transpiled template circuit once (depth=%d)", _transpiled_template.depth())
+        except Exception as e:
+            logger.warning("Template transpile failed (%s), will use decompose fallback", e)
+            _transpiled_template = None
+
         def _patched_simulate(qc):
-            try:
-                qc_run = qk_transpile(qc, _simulator, optimization_level=0)
-            except Exception:
+            # Extract bound parameter values from the incoming circuit
+            param_map = {p.name: float(v) for p, v in qc.parameter_values.items()} \
+                        if hasattr(qc, "parameter_values") and qc.num_parameters > 0 \
+                        else {}
+
+            if _transpiled_template is not None and len(param_map) == 0:
+                # Circuit is already fully bound — run directly on pre-transpiled
+                # Re-transpile only to remap the bound values onto transpiled layout
+                qc_run = qc
+                for _ in range(8):
+                    qc_run = qc_run.decompose()
+            elif _transpiled_template is not None:
+                # Bind extracted values onto the pre-transpiled parametric circuit
+                binding = {
+                    p: param_map.get(p.name, 0.0)
+                    for p in _transpiled_sorted_params
+                }
+                qc_run = _transpiled_template.assign_parameters(binding)
+            else:
                 qc_run = qc
                 for _ in range(8):
                     qc_run = qc_run.decompose()
 
             job    = _simulator.run(qc_run, shots=_shots, noise_model=_noise_model)
-            result = job.result()
-            counts = result.get_counts()
-
+            counts = job.result().get_counts()
             n_q      = qc.num_qubits
             all_bits = ["".join(p) for p in __import__("itertools").product("01", repeat=n_q)]
-            probs    = np.array([counts.get(b, 0) for b in all_bits], dtype=float) / _shots
-            return probs
+            return np.array([counts.get(b, 0) for b in all_bits], dtype=float) / _shots
+
 
     # Bind the patched method to this specific instance
     import types

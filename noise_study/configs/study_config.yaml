@@ -4,7 +4,7 @@ description: "Noise analysis for QRC on Mackey-Glass time series"
 # ─── Dataset ──────────────────────────────────────────────────
 dataset:
   name:               "mackey_glass"
-  total_samples:          10000
+  total_samples:          5000
   train_fraction:     0.8
   window_size:        20
   prediction_horizon: 20

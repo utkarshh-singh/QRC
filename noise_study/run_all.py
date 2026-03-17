@@ -10,9 +10,7 @@ Usage
 cd QRC/noise_study
 python run_all.py [--force-rebuild-data] [--dry-run] [--workers N]
 """
-
 from __future__ import annotations
-
 import argparse
 import logging
 import sys
@@ -55,6 +53,13 @@ def _run_one_worker(args: dict) -> tuple[str, bool]:
     Must be a module-level function (not a lambda) for pickling.
     Returns (run_id, success).
     """
+    
+    import os
+    os.environ["OMP_NUM_THREADS"]        = "2"
+    os.environ["QISKIT_NUM_THREADS"]     = "2"
+    os.environ["OPENBLAS_NUM_THREADS"]   = "2"
+    os.environ["MKL_NUM_THREADS"]        = "2"
+
     import sys
     from pathlib import Path
     sys.path.insert(0, str(Path(__file__).parent))
