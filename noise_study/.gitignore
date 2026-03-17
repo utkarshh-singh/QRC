@@ -17,6 +17,7 @@ results/figures/
 results/tables/
 logs/
 session_log.md
+requirements_old.txt
 # Keep manifests and configs tracked
 !manifests/planned_runs.csv
 
