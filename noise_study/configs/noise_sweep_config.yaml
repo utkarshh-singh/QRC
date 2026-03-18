@@ -3,7 +3,7 @@ description: "Parametric noise channel sweep on QRC — Mackey-Glass prediction"
 
 # Dataset identical to main study
 dataset:
-  total_samples:      5000
+  total_samples:      10000
   train_fraction:     0.8
   window_size:        20
   prediction_horizon: 20
