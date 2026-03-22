@@ -1,0 +1,29 @@
+# =============================================================================
+# paths.yaml
+# All filesystem paths used by the study.
+# Paths are relative to noise_study/ root unless marked absolute.
+# =============================================================================
+
+root: "."                          # noise_study/
+
+data:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  mg_raw_file: "data/raw/mackey_glass_raw.npy"
+  mg_processed_file: "data/processed/mackey_glass_dataset.npz"
+  metadata_file: "data/processed/dataset_metadata.json"
+
+manifests:
+  planned_runs: "manifests/planned_runs.csv"
+
+runs_dir: "runs"
+
+results:
+  aggregated_dir: "results/aggregated"
+  figures_dir: "results/figures"
+  tables_dir: "results/tables"
+  master_csv: "results/aggregated/master_results.csv"
+  grouped_csv: "results/aggregated/grouped_results.csv"
+
+logs:
+  study_log: "logs/study.log"

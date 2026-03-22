@@ -1,0 +1,9 @@
+{
+  "run_id": "2Q_depol_p=0.0010",
+  "noise_type": "two_qubit_depol",
+  "noise_param": 0.001,
+  "label": "2Q_depol_p=0.0010",
+  "shots": 5000,
+  "elapsed_seconds": 6688.06,
+  "timestamp": "2026-03-20T07:52:45.457417+00:00"
+}

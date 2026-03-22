@@ -1,0 +1,70 @@
+study_name:  "qrc_noise_study"
+description: "Noise analysis for QRC on Mackey-Glass time series"
+
+# ─── Dataset ──────────────────────────────────────────────────
+dataset:
+  name:               "mackey_glass"
+  total_samples:          5000
+  train_fraction:     0.8
+  window_size:        20
+  prediction_horizon: 20
+  time_step:          1
+  b:                  0.1
+  c:                  0.2
+  tau:                17
+  seed:               42
+  normalize:          true          # MinMaxScaler → [0, π]
+  scale_range:        [0, 3.14159]
+
+# ─── Experiment seeds ─────────────────────────────────────────
+seeds: [0, 1, 2]
+
+# ─── Ideal baseline ───────────────────────────────────────────
+ideal:
+  shots:      null
+  noise_type: "ideal"
+
+# ─── Shot-noise sweep ─────────────────────────────────────────
+shot_sweep:
+  shots:      [256, 1024, 2048, 5000]
+  noise_type: "shot_only"
+
+# ─── Noise ablation ───────────────────────────────────────────
+ablation:
+  shots: 5000
+  noise_types:
+    - "shot_only"
+    - "readout_only"
+    - "single_qubit_only"
+    - "two_qubit_only"
+    - "relaxation_only"
+    - "full_backend"
+
+# ─── Backend ──────────────────────────────────────────────────
+backend:
+  name:              "FakeTorino"
+  simulator:         "AerSimulator"
+  transpile:         true
+
+# ─── Metrics to compute ───────────────────────────────────────
+metrics:
+  - mse
+  - rmse
+  - mae
+  - r2
+  - pearson
+
+# ─── Reservoir (CPRC + ESNetwork) ─────────────────────────────
+reservoir:
+  reps:              1
+  alpha:             0.7
+  regularization:    1.0e-3
+  model_type:        "ridge"
+  approach:          "feedback"
+  cpk:               true
+  ETE:               false
+  cp_params:         null
+  meas_limit:        null
+  limit:             null           # no state truncation
+  optimization_level: 3
+  show_progress:     true

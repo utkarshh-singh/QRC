@@ -1,0 +1,9 @@
+{
+  "run_id": "readout_p=0.0500",
+  "noise_type": "readout",
+  "noise_param": 0.05,
+  "label": "readout_p=0.0500",
+  "shots": 5000,
+  "elapsed_seconds": 1148.08,
+  "timestamp": "2026-03-20T15:02:49.663409+00:00"
+}

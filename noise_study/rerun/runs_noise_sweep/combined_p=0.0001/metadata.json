@@ -1,0 +1,9 @@
+{
+  "run_id": "combined_p=0.0001",
+  "noise_type": "combined",
+  "noise_param": 0.0001,
+  "label": "combined_p=0.0001",
+  "shots": 5000,
+  "elapsed_seconds": 6853.24,
+  "timestamp": "2026-03-21T02:13:32.670659+00:00"
+}

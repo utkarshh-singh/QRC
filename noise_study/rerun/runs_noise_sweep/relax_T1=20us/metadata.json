@@ -1,0 +1,9 @@
+{
+  "run_id": "relax_T1=20us",
+  "noise_type": "relaxation",
+  "noise_param": 20,
+  "label": "relax_T1=20us",
+  "shots": 5000,
+  "elapsed_seconds": 6676.06,
+  "timestamp": "2026-03-20T22:27:52.267581+00:00"
+}

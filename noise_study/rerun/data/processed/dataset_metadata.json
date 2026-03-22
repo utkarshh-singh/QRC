@@ -1,0 +1,14 @@
+{
+  "tau": 17,
+  "window_size": 20,
+  "prediction_horizon": 20,
+  "total_samples": 5000,
+  "train_fraction": 0.8,
+  "washout": 200,
+  "normalize": true,
+  "s_min": 0.36921353953961855,
+  "s_max": 1.3436094304496622,
+  "n_train": 3968,
+  "n_test": 993,
+  "dataset_source": "MG_series(QRC/datasets.py)"
+}

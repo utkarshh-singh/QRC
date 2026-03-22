@@ -1,0 +1,9 @@
+{
+  "run_id": "1Q_depol_p=0.0001",
+  "noise_type": "single_qubit_depol",
+  "noise_param": 0.0001,
+  "label": "1Q_depol_p=0.0001",
+  "shots": 5000,
+  "elapsed_seconds": 6861.71,
+  "timestamp": "2026-03-19T20:42:00.505884+00:00"
+}
