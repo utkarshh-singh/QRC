@@ -14,7 +14,7 @@ from tqdm import tqdm
 from concurrent.futures import ProcessPoolExecutor
 from circuits import CPCircuit
 from matrices import OpticalNetwork
-from Permanents import RyserPermanent, ClassicalCoincidence
+#from Permanents import RyserPermanent, ClassicalCoincidence
 from utility import MetaFibonacci, mapping, CPaction
 from itertools import product
 

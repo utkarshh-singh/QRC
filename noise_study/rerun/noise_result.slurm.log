@@ -1,0 +1,97 @@
+:/gpfs/share/rhel9/opt/custom/pyscf:/home/admin.joey.wang/work/admin.joey.wang/software/graci:/home/admin.joey.wang/work/admin.joey.wang/software/QRC/noise_study
+\n
+/home/admin.joey.wang/work/admin.joey.wang/software/QRC/noise_study:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/oneapi-2024.2.0/intel-oneapi-mkl-2024.2.0-o4egwzntoitkixywytfgnarurf6swqhf/mkl/2024.2/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/openmpi-4.1.6-rttti7g77fa4ih26motfh44xjmmrcent/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/pmix-5.0.2-nhtx3z7ddf4tj4kzh3vuz5a5n5m7cfmc/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/openssh-9.7p1-ygdf36egs47dvzdao4tjzqwrefoict44/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/krb5-1.21.2-kmtxlpzmknx7m73v6ksdmdus62lcstbb/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/gettext-0.22.5-is5palmdl6wzfgex7r2niz5yc4piisfd/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/tar-1.34-jlnrgtsmcvrcwqabwkkeqwn6yv3tkz2m/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/zstd-1.5.6-5ncevpgragw4vh4mcsgqkom7eihgmigu/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/pigz-2.8-un5pfbrbfjycgqek2b7iha2jncjndpwq/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/bzip2-1.0.8-qsz7gyxlkkspbwwuciao35ltzks7rrzl/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/numactl-2.0.14-6rrv2orz4xrefrxwed4jsbmd2kiq3acx/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/libevent-2.1.12-m5nqvl56fm3imawjw6htwswwwykyy7jk/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/openssl-3.3.1-ggykmexp7xywlk5dhluzrnkmqjlq46xs/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/hwloc-2.9.3-6kqk2zpzxserohuvhon3vtqbshedppsi/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/ncurses-6.5-imk2ooyue3f4e3dcrd5gvtza6c7jswzp/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/libxml2-2.10.3-a2ds24mu2amydkuvp6hr3ubodg6zrjbc/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/xz-5.4.6-w2dnca2nsw6v5mtwwpiyusiajvqyxosw/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/libiconv-1.17-khehlscbtkwfo6nlg6curnydi63y2wwj/bin:/gpfs/share/rhel9/opt/spack/opt/spack/linux-rhel9-skylake_avx512/gcc-11.3.1/intel-oneapi-compilers-2024.2.0-5xqhn442pkasocerpzbr2m35gwfnbjg2/compiler/2024.2/bin:/home/admin.joey.wang/.juliaup/bin:/home/admin.joey.wang/anaconda3/bin:/home/admin.joey.wang/anaconda3/condabin:/home/admin.joey.wang/.local/bin:/home/admin.joey.wang/bin:/home/admin.joey.wang/work/admin.joey.wang/bin:/home/admin.joey.wang/work/admin.joey.wang/software/BDD/bin:/home/admin.joey.wang/work/admin.joey.wang/software/graci/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+no change     /home/admin.joey.wang/anaconda3/condabin/conda
+no change     /home/admin.joey.wang/anaconda3/bin/conda
+no change     /home/admin.joey.wang/anaconda3/bin/conda-env
+no change     /home/admin.joey.wang/anaconda3/bin/activate
+no change     /home/admin.joey.wang/anaconda3/bin/deactivate
+no change     /home/admin.joey.wang/anaconda3/etc/profile.d/conda.sh
+no change     /home/admin.joey.wang/anaconda3/etc/fish/conf.d/conda.fish
+no change     /home/admin.joey.wang/anaconda3/shell/condabin/Conda.psm1
+no change     /home/admin.joey.wang/anaconda3/shell/condabin/conda-hook.ps1
+no change     /home/admin.joey.wang/anaconda3/lib/python3.12/site-packages/xontrib/conda.xsh
+no change     /home/admin.joey.wang/anaconda3/etc/profile.d/conda.csh
+no change     /home/admin.joey.wang/.bashrc
+No action taken.
+Scratch directory:  /scratch/admin.joey.wang/qrc_job.1342953
+2026-03-19 14:47:37,084 INFO     src.data — Generating Mackey-Glass: tau=17  n=5000  window=20  horizon=20  washout=200
+2026-03-19 14:47:37,104 INFO     src.data — Dataset saved: 3968 train / 993 test windows  source=MG_series(QRC/datasets.py)
+2026-03-19 14:47:37,104 INFO     run_noise_sweep — Dataset: 3968 train / 993 test
+2026-03-19 14:47:37,178 INFO     run_noise_sweep — Total parametric runs: 25
+2026-03-19 14:47:37,178 INFO     run_noise_sweep — [1/25] START 1Q_depol_p=0.0001
+2026-03-19 14:47:38,796 INFO     src.reservoir_adapter — reservoir_adapter: CPRC and ESNetwork imported from QRC/
+2026-03-19 14:47:38,897 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-19 16:42:00,529 INFO     run_noise_sweep —   DONE  RMSE=0.0317  R²=0.9830
+2026-03-19 16:42:00,530 INFO     run_noise_sweep — [2/25] START 1Q_depol_p=0.0010
+2026-03-19 16:42:00,580 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-19 18:34:50,215 INFO     run_noise_sweep —   DONE  RMSE=0.0306  R²=0.9841
+2026-03-19 18:34:50,216 INFO     run_noise_sweep — [3/25] START 1Q_depol_p=0.0100
+2026-03-19 18:34:50,271 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-19 20:27:08,913 INFO     run_noise_sweep —   DONE  RMSE=0.0311  R²=0.9835
+2026-03-19 20:27:08,914 INFO     run_noise_sweep — [4/25] START 1Q_depol_p=0.0200
+2026-03-19 20:27:08,966 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-19 22:18:30,357 INFO     run_noise_sweep —   DONE  RMSE=0.0312  R²=0.9835
+2026-03-19 22:18:30,357 INFO     run_noise_sweep — [5/25] START 1Q_depol_p=0.0500
+2026-03-19 22:18:30,411 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-20 00:09:43,592 INFO     run_noise_sweep —   DONE  RMSE=0.0320  R²=0.9825
+2026-03-20 00:09:43,593 INFO     run_noise_sweep — [6/25] START 2Q_depol_p=0.0001
+2026-03-20 00:09:43,647 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 02:01:17,398 INFO     run_noise_sweep —   DONE  RMSE=0.0318  R²=0.9828
+2026-03-20 02:01:17,399 INFO     run_noise_sweep — [7/25] START 2Q_depol_p=0.0010
+2026-03-20 02:01:17,454 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 03:52:45,466 INFO     run_noise_sweep —   DONE  RMSE=0.0330  R²=0.9814
+2026-03-20 03:52:45,466 INFO     run_noise_sweep — [8/25] START 2Q_depol_p=0.0100
+2026-03-20 03:52:45,520 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 05:44:07,076 INFO     run_noise_sweep —   DONE  RMSE=0.0828  R²=0.8834
+2026-03-20 05:44:07,076 INFO     run_noise_sweep — [9/25] START 2Q_depol_p=0.0200
+2026-03-20 05:44:07,132 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 07:35:49,240 INFO     run_noise_sweep —   DONE  RMSE=0.1544  R²=0.5946
+2026-03-20 07:35:49,240 INFO     run_noise_sweep — [10/25] START 2Q_depol_p=0.0500
+2026-03-20 07:35:49,291 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 09:27:24,411 INFO     run_noise_sweep —   DONE  RMSE=0.2297  R²=0.1032
+2026-03-20 09:27:24,411 INFO     run_noise_sweep — [11/25] START readout_p=0.0001
+2026-03-20 09:27:24,458 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 09:46:29,737 INFO     run_noise_sweep —   DONE  RMSE=0.0312  R²=0.9834
+2026-03-20 09:46:29,737 INFO     run_noise_sweep — [12/25] START readout_p=0.0010
+2026-03-20 09:46:29,790 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 10:05:33,811 INFO     run_noise_sweep —   DONE  RMSE=0.0311  R²=0.9836
+2026-03-20 10:05:33,811 INFO     run_noise_sweep — [13/25] START readout_p=0.0100
+2026-03-20 10:05:33,864 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 10:24:39,954 INFO     run_noise_sweep —   DONE  RMSE=0.0349  R²=0.9794
+2026-03-20 10:24:39,954 INFO     run_noise_sweep — [14/25] START readout_p=0.0200
+2026-03-20 10:24:40,006 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 10:43:41,577 INFO     run_noise_sweep —   DONE  RMSE=0.0379  R²=0.9756
+2026-03-20 10:43:41,578 INFO     run_noise_sweep — [15/25] START readout_p=0.0500
+2026-03-20 10:43:41,630 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=88)
+2026-03-20 11:02:49,685 INFO     run_noise_sweep —   DONE  RMSE=0.0535  R²=0.9513
+2026-03-20 11:02:49,685 INFO     run_noise_sweep — [16/25] START relax_T1=500us
+2026-03-20 11:02:49,759 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-20 12:54:05,692 INFO     run_noise_sweep —   DONE  RMSE=0.0328  R²=0.9817
+2026-03-20 12:54:05,692 INFO     run_noise_sweep — [17/25] START relax_T1=200us
+2026-03-20 12:54:05,746 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-20 14:45:20,046 INFO     run_noise_sweep —   DONE  RMSE=0.0313  R²=0.9834
+2026-03-20 14:45:20,047 INFO     run_noise_sweep — [18/25] START relax_T1=75us
+2026-03-20 14:45:20,088 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-20 16:36:36,203 INFO     run_noise_sweep —   DONE  RMSE=0.0318  R²=0.9828
+2026-03-20 16:36:36,203 INFO     run_noise_sweep — [19/25] START relax_T1=20us
+2026-03-20 16:36:36,252 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-20 18:27:52,276 INFO     run_noise_sweep —   DONE  RMSE=0.0322  R²=0.9824
+2026-03-20 18:27:52,276 INFO     run_noise_sweep — [20/25] START relax_T1=10us
+2026-03-20 18:27:52,346 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-20 20:19:19,433 INFO     run_noise_sweep —   DONE  RMSE=0.0317  R²=0.9830
+2026-03-20 20:19:19,434 INFO     run_noise_sweep — [21/25] START combined_p=0.0001
+2026-03-20 20:19:19,484 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-20 22:13:32,680 INFO     run_noise_sweep —   DONE  RMSE=0.0341  R²=0.9802
+2026-03-20 22:13:32,680 INFO     run_noise_sweep — [22/25] START combined_p=0.0010
+2026-03-20 22:13:32,734 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-21 00:07:26,696 INFO     run_noise_sweep —   DONE  RMSE=0.0835  R²=0.8814
+2026-03-21 00:07:26,696 INFO     run_noise_sweep — [23/25] START combined_p=0.0100
+2026-03-21 00:07:26,751 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-21 02:01:49,655 INFO     run_noise_sweep —   DONE  RMSE=0.2446  R²=-0.0169
+2026-03-21 02:01:49,655 INFO     run_noise_sweep — [24/25] START combined_p=0.0200
+2026-03-21 02:01:49,708 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-21 03:55:51,827 INFO     run_noise_sweep —   DONE  RMSE=0.2461  R²=-0.0298
+2026-03-21 03:55:51,828 INFO     run_noise_sweep — [25/25] START combined_p=0.0500
+2026-03-21 03:55:51,886 INFO     src.reservoir_adapter — Pre-transpiled template circuit once (depth=41)
+2026-03-21 05:50:05,676 INFO     run_noise_sweep —   DONE  RMSE=0.2450  R²=-0.0203

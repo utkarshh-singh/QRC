@@ -1,0 +1,55 @@
+2026-03-18 14:34:51,678 INFO     src.data — Generating Mackey-Glass: tau=17  n=5000  window=20  horizon=20  washout=200
+2026-03-18 14:34:51,700 INFO     src.data — Dataset saved: 3968 train / 993 test windows  source=MG_series(QRC/datasets.py)
+2026-03-18 14:34:51,700 INFO     run_noise_sweep — Dataset: 3968 train / 993 test
+2026-03-18 14:34:51,811 INFO     run_noise_sweep — Total parametric runs: 25
+2026-03-18 14:34:51,814 INFO     run_noise_sweep — SKIP 1Q_depol_p=0.0001 (already done)
+2026-03-18 14:34:51,814 INFO     run_noise_sweep — [2/25] START 1Q_depol_p=0.0010
+2026-03-18 14:34:53,037 WARNING  src.reservoir_adapter — reservoir_adapter: Could not import CPRC/ESNetwork from QRC/: No module named 'Permanents'
+Falling back to dummy Ridge predictor.  Ensure QRC/ contains reservoirs.py and ESN.py.
+2026-03-18 14:34:53,042 ERROR    run_noise_sweep —   FAILED 1Q_depol_p=0.0010: No module named 'Permanents'
+2026-03-18 14:34:53,043 INFO     run_noise_sweep — [3/25] START 1Q_depol_p=0.0100
+2026-03-18 14:34:53,046 ERROR    run_noise_sweep —   FAILED 1Q_depol_p=0.0100: No module named 'Permanents'
+2026-03-18 14:34:53,046 INFO     run_noise_sweep — [4/25] START 1Q_depol_p=0.0200
+2026-03-18 14:34:53,049 ERROR    run_noise_sweep —   FAILED 1Q_depol_p=0.0200: No module named 'Permanents'
+2026-03-18 14:34:53,049 INFO     run_noise_sweep — [5/25] START 1Q_depol_p=0.0500
+2026-03-18 14:34:53,052 ERROR    run_noise_sweep —   FAILED 1Q_depol_p=0.0500: No module named 'Permanents'
+2026-03-18 14:34:53,053 INFO     run_noise_sweep — [6/25] START 2Q_depol_p=0.0001
+2026-03-18 14:34:53,056 ERROR    run_noise_sweep —   FAILED 2Q_depol_p=0.0001: No module named 'Permanents'
+2026-03-18 14:34:53,056 INFO     run_noise_sweep — [7/25] START 2Q_depol_p=0.0010
+2026-03-18 14:34:53,059 ERROR    run_noise_sweep —   FAILED 2Q_depol_p=0.0010: No module named 'Permanents'
+2026-03-18 14:34:53,059 INFO     run_noise_sweep — [8/25] START 2Q_depol_p=0.0100
+2026-03-18 14:34:53,062 ERROR    run_noise_sweep —   FAILED 2Q_depol_p=0.0100: No module named 'Permanents'
+2026-03-18 14:34:53,062 INFO     run_noise_sweep — [9/25] START 2Q_depol_p=0.0200
+2026-03-18 14:34:53,065 ERROR    run_noise_sweep —   FAILED 2Q_depol_p=0.0200: No module named 'Permanents'
+2026-03-18 14:34:53,066 INFO     run_noise_sweep — [10/25] START 2Q_depol_p=0.0500
+2026-03-18 14:34:53,069 ERROR    run_noise_sweep —   FAILED 2Q_depol_p=0.0500: No module named 'Permanents'
+2026-03-18 14:34:53,069 INFO     run_noise_sweep — [11/25] START readout_p=0.0001
+2026-03-18 14:34:53,072 ERROR    run_noise_sweep —   FAILED readout_p=0.0001: No module named 'Permanents'
+2026-03-18 14:34:53,072 INFO     run_noise_sweep — [12/25] START readout_p=0.0010
+2026-03-18 14:34:53,075 ERROR    run_noise_sweep —   FAILED readout_p=0.0010: No module named 'Permanents'
+2026-03-18 14:34:53,076 INFO     run_noise_sweep — [13/25] START readout_p=0.0100
+2026-03-18 14:34:53,079 ERROR    run_noise_sweep —   FAILED readout_p=0.0100: No module named 'Permanents'
+2026-03-18 14:34:53,079 INFO     run_noise_sweep — [14/25] START readout_p=0.0200
+2026-03-18 14:34:53,082 ERROR    run_noise_sweep —   FAILED readout_p=0.0200: No module named 'Permanents'
+2026-03-18 14:34:53,082 INFO     run_noise_sweep — [15/25] START readout_p=0.0500
+2026-03-18 14:34:53,086 ERROR    run_noise_sweep —   FAILED readout_p=0.0500: No module named 'Permanents'
+2026-03-18 14:34:53,086 INFO     run_noise_sweep — [16/25] START relax_T1=500us
+2026-03-18 14:34:53,089 ERROR    run_noise_sweep —   FAILED relax_T1=500us: No module named 'Permanents'
+2026-03-18 14:34:53,089 INFO     run_noise_sweep — [17/25] START relax_T1=200us
+2026-03-18 14:34:53,092 ERROR    run_noise_sweep —   FAILED relax_T1=200us: No module named 'Permanents'
+2026-03-18 14:34:53,093 INFO     run_noise_sweep — [18/25] START relax_T1=75us
+2026-03-18 14:34:53,098 ERROR    run_noise_sweep —   FAILED relax_T1=75us: No module named 'Permanents'
+2026-03-18 14:34:53,098 INFO     run_noise_sweep — [19/25] START relax_T1=20us
+2026-03-18 14:34:53,102 ERROR    run_noise_sweep —   FAILED relax_T1=20us: No module named 'Permanents'
+2026-03-18 14:34:53,102 INFO     run_noise_sweep — [20/25] START relax_T1=10us
+2026-03-18 14:34:53,105 ERROR    run_noise_sweep —   FAILED relax_T1=10us: No module named 'Permanents'
+2026-03-18 14:34:53,105 INFO     run_noise_sweep — [21/25] START combined_p=0.0001
+2026-03-18 14:34:53,108 ERROR    run_noise_sweep —   FAILED combined_p=0.0001: No module named 'Permanents'
+2026-03-18 14:34:53,109 INFO     run_noise_sweep — [22/25] START combined_p=0.0010
+2026-03-18 14:34:53,112 ERROR    run_noise_sweep —   FAILED combined_p=0.0010: No module named 'Permanents'
+2026-03-18 14:34:53,112 INFO     run_noise_sweep — [23/25] START combined_p=0.0100
+2026-03-18 14:34:53,115 ERROR    run_noise_sweep —   FAILED combined_p=0.0100: No module named 'Permanents'
+2026-03-18 14:34:53,116 INFO     run_noise_sweep — [24/25] START combined_p=0.0200
+2026-03-18 14:34:53,119 ERROR    run_noise_sweep —   FAILED combined_p=0.0200: No module named 'Permanents'
+2026-03-18 14:34:53,119 INFO     run_noise_sweep — [25/25] START combined_p=0.0500
+2026-03-18 14:34:53,122 ERROR    run_noise_sweep —   FAILED combined_p=0.0500: No module named 'Permanents'

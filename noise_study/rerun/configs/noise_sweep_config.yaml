@@ -1,0 +1,61 @@
+study_name: "qrc_parametric_noise_sweep"
+description: "Parametric noise channel sweep on QRC — Mackey-Glass prediction"
+
+# Dataset identical to main study
+dataset:
+  total_samples:      5000
+  train_fraction:     0.8
+  window_size:        20
+  prediction_horizon: 20
+  time_step:          1
+  b:                  0.1
+  c:                  0.2
+  tau:                17
+  seed:               42
+  normalize:          true
+
+# One seed only — this is a noise characterisation study, not statistical
+seeds: [0]
+
+# Shots fixed — we isolate noise channel, not shot noise
+shots: 5000
+
+# Noise channels and their parameter sweeps
+noise_sweep:
+  single_qubit_depol:
+    gate:   ["u1", "u2", "u3", "rz", "sx", "x"]
+    values: [0.0001, 0.001, 0.01, 0.02, 0.05]
+
+  two_qubit_depol:
+    gate:   ["cx", "ecr"]
+    values: [0.0001, 0.001, 0.01, 0.02, 0.05]
+
+  readout:
+    values: [0.0001, 0.001, 0.01, 0.02, 0.05]
+
+  relaxation:
+    # T1 values in microseconds; T2 = T1/2 (conservative)
+    # gate_time = 100ns = 1e-7s (typical for superconducting)
+    T1_us:     [500, 200, 75, 20, 10]
+    T2_factor:  0.5    # T2 = T1 * T2_factor
+    gate_time_ns: 100
+
+  combined:
+    # All channels on simultaneously with same base error rate
+    values: [0.0001, 0.001, 0.01, 0.02, 0.05]
+
+# Reservoir (identical to main study)
+reservoir:
+  reps:              1
+  alpha:             0.7
+  regularization:    1.0e-3
+  washout:           100
+  model_type:        ridge
+  approach:          feedback
+  cpk:               true
+  ETE:               false
+  cp_params:         null
+  meas_limit:        null
+  limit:             null
+  optimization_level: 3
+  show_progress:     true
